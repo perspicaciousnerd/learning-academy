@@ -8,8 +8,27 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f0f2f5;
+        }
+        .banner {
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .banner h1 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .banner p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
         }
         .container {
             max-width: 800px;
@@ -19,10 +38,6 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #1a73e8;
-            text-align: center;
-        }
         .welcome-text {
             text-align: center;
             color: #5f6368;
@@ -31,9 +46,13 @@
     </style>
 </head>
 <body>
+    <div class="banner">
+        <h1>Learning Academy</h1>
+        <p>Unlock Your Potential with Professional Online Education</p>
+    </div>
     <div class="container">
-        <h1>Welcome to Learning Academy</h1>
-        <p class="welcome-text">Your journey to knowledge starts here!</p>
+        <h2>Welcome to Our Platform</h2>
+        <p class="welcome-text">Your journey to knowledge starts here! Explore our courses and start learning today.</p>
     </div>
 </body>
 </html>
