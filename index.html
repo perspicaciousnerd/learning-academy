@@ -8,32 +8,110 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #f0f2f5;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            background-color: #1a73e8;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
             background-color: white;
-            padding: 20px;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         h1 {
             color: #1a73e8;
-            text-align: center;
+            margin-bottom: 1rem;
         }
-        .welcome-text {
-            text-align: center;
-            color: #5f6368;
-            margin-bottom: 20px;
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .course-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <h1>Welcome to Learning Academy</h1>
-        <p class="welcome-text">Your journey to knowledge starts here!</p>
+        <section class="hero">
+            <h1>Welcome to Learning Academy</h1>
+            <p>Your journey to knowledge starts here!</p>
+        </section>
+
+        <section class="courses">
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, and JavaScript</p>
+            </div>
+            <div class="course-card">
+                <h3>Data Science</h3>
+                <p>Master Python and Data Analysis</p>
+            </div>
+            <div class="course-card">
+                <h3>Digital Marketing</h3>
+                <p>Understand Modern Marketing</p>
+            </div>
+        </section>
     </div>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#twitter">Twitter</a>
+                <a href="#facebook">Facebook</a>
+                <a href="#linkedin">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
